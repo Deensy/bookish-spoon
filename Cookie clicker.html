@@ -1,0 +1,137 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<link href='Cookie clicker.css' rel='stylesheet' type='text/css'/>
+	<link href="https://fonts.googleapis.com/css?family=Anton|Nova+Square|Press+Start+2P" rel="stylesheet">
+<title>Pav's Cookie Clicker</title>
+	<link rel="icon" href="cookie-icon.ico">
+
+<script>
+	var cookies = 0;
+	var upgradeCounter = 0;
+	var oneCookie = 1;
+	function addcookie() {
+		cookies = cookies + oneCookie;
+		console.log(cookies);
+		document.getElementById("cookieCount").innerHTML = 'You have ' + cookies.toLocaleString()
+ + ' cookies!';
+ 		
+	}
+	
+
+	function upgrade1() {
+		if(cookies >= 2) {
+ 			cookies = cookies + 8;
+ 			console.log(cookies);
+ 			document.getElementById("cookieCount").innerHTML = 'You have ' + cookies.toLocaleString()
+ + ' cookies!';
+ 			upgradeCounter = upgradeCounter + 1;
+
+	}	else {
+			alert('You do not have enough cookies');
+	}
+	}
+
+	function upgrade2() {
+		if(cookies >= 10) {
+			cookies = cookies * 2;
+			cookies = cookies - 10;
+			console.log(cookies);
+			document.getElementById("cookieCount").innerHTML = 'You have ' + cookies.toLocaleString()
+ + ' cookies!';
+ 			upgradeCounter = upgradeCounter + 1;
+			
+		} else {
+			alert('You do not have enough  cookies');
+		}
+	}
+
+	function upgrade3() {
+		if(cookies >= 20) {
+			cookies = cookies - 20;
+			oneCookie = 1000;
+			document.getElementById('oneUseButton').disabled = true;
+			upgradeCounter = upgradeCounter + 1;
+		} else {
+			alert('You do not have enough cookies');
+		}
+	}
+
+	function removeOneK() {
+		cookies = cookies - 1000;
+	}
+
+	function autoClick() {
+		if(cookies >= 1000) {
+			cookies = cookies + 1;
+			console.log(cookies);
+			document.getElementById("cookieCount").innerHTML = 'You have ' + cookies.toLocaleString() + ' cookies!';
+			document.getElementById('oneUseButtonA').disabled = true;
+			
+		} else {
+			return
+		}
+		}
+
+	function countUpgrades() {
+		if(cookies >= 50) {
+		cookies = cookies - 50
+		document.getElementById("upgradeAmount").innerHTML = upgradeCounter + ' upgrades bought!';
+		document.getElementById("cookieCount").innerHTML = 'You have ' + cookies.toLocaleString() + ' cookies!';
+		
+	} else {
+		alert('You do not have enough cookies')
+	}
+	}
+
+	function addOneUpgrade() {
+		upgradeCounter = upgradeCounter + 1
+	}
+
+
+
+
+</script>
+</head>
+<body> 
+	<h1 class = "cookieTitle">Pav's Cookie Clicker</h1>
+	<h2 class = 'cookieSubTitle'>Click The Cookie!</h2>
+	<h2 id = 'cookieCount' class = 'centerTitle'>You have 0 cookies</h2>
+	<h3 id = 'upgradeAmount' class = 'centerAA'>0 Upgrades Bought</h3>
+	<img class = resizedImage src = 'cookie button.png'>
+
+	<div class = 'center'>
+		<input type = "image" src="cookie button.png" class = 'cookieButton' onclick='addcookie()'>
+	</div>
+
+	<div class = 'upgrades'>
+		<p class = 'upgradeText'>Cost: 2 Cookies</p>
+		<button class = 'custom' onclick='upgrade1()'>+ 10 Cookies</button>
+		<br>
+		<p class = 'upgradeText'>Cost: 10 Cookies</p>
+		<button class = 'custom' onclick='upgrade2()'>Double Your Cookies</button>
+		<br>
+		<p class = 'upgradeText'>Cost 20 Cookies</p>
+		<button id = 'oneUseButton' class = 'custom' onclick='upgrade3();'>1000 Cookies per click</button>
+		<br>
+		<p class = 'upgradeText'>Cost 1000 Cookies</p>
+		<button id = 'oneUseButtonA' class = 'custom' onclick='setInterval(autoClick, 100); removeOneK(); addOneUpgrade()'>Auto Click</button>
+		<br>
+		<p class = 'upgradeText'>Cost 50 Cookies</p>
+		<button class = 'custom' onclick='countUpgrades()'>Count Upgrades</button>
+
+		
+	</div>
+
+
+
+	<div class = 'down'>
+
+		<a class = links href = 'https://www.taste.com.au/recipes/chocolate-chip-cookies-2/1bfaa0e6-13b4-489d-bbd8-1cc5caf1fa32'>Make Cookies</a>
+		<br>
+		<a class = links href = 'https://www.google.com/search?q=best+choc+chip+cookies&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjv7veG-aDhAhVIX30KHYM6D40Q_AUIDygC&biw=1309&bih=716'>Images Of Cookies</a>
+	</div>
+
+
+</body>
+</html>

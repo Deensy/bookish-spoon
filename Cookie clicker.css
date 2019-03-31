@@ -1,0 +1,154 @@
+.cookieTitle {
+	font-size: 50px;
+	text-align: center;
+	color: red;
+	font-family: 'Nova Square', sans-serif;
+}
+
+.cookieSubTitle {
+	font-size: 30px;
+	text-align: center;
+	color: white;
+	font-family: 'Nova Square', sans-serif;
+}
+
+#cookieCount {
+	font-family: 'Press Start 2P', cursive;
+	color: gold;
+}
+
+.centerTitle {
+	align-items: right;
+	text-align: right;
+	width: 65%;
+	float: left;
+	/*border-style: dotted;*/
+	
+}
+
+.center {
+	align-items: right;
+	text-align: right;
+	width: 65%;
+	float: left;
+	/*border-style: dotted;*/
+	}
+
+.centerAA {
+	align-items: right;
+	text-align: right;
+	width: 55%;
+	float: left;
+	
+	}
+
+#oneUseButton {}
+
+.cookieButton {
+	background-color: #d6c985;
+	border: none;
+	color: black;
+	padding: 30px;
+	text-align: center;
+	font-family: 'Anton', sans-serif;
+	font-size: 50px;
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius: 40px;
+	height: 260px;
+	width: 360px;
+	line-height: 50%;
+	margin-right: 10px;
+}
+
+.cookieButton:hover {
+	background-color: #e6ae47;
+}
+
+.cookieButton:active {
+  background-color: #d6c985;
+  box-shadow: 0 10px #666;
+  transform: translateY(8px);
+}
+
+.upgrades {
+	text-align: right;
+	float: right;
+	width: 30%;
+	/*border-style: dotted;*/
+
+	
+}
+
+.down {
+	width: 100%;
+	/*border-style: dotted;*/
+	float: right;
+}
+
+.upgradeText {
+	font-family: 'Nova Square', sans-serif;
+	font-size: 20px;
+	margin-right: 90px;
+	color: pink;
+}
+
+#progressBar {
+	width: 0.1%;
+	color: grey;
+	
+}
+
+.links {
+	color: white;
+
+}
+
+#bar {
+	width: 100%;
+	height: 30px;
+  	background-color: green;
+}
+
+.resizedImage {
+	max-width: 50px;
+	max-height: 50px;
+	float: right;
+}
+
+#upgradeAmount {
+	font-family: 'Nova Square';
+	color: lightgreen;
+	
+
+}
+
+.custom {
+	background-color: #d6c985;
+	border: none;
+	color: black;
+	padding: 30px;
+	text-align: center;
+	font-family: 'Anton', sans-serif;
+	font-size: 20px;
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius: 12px;
+	margin-right: 40px;
+	width: 250px;
+}
+
+.custom:hover {
+	background-color: #e6ae47;
+}
+
+.custom:active {
+  background-color: #d6c985;
+  box-shadow: 0 10px #666;
+  transform: translateY(8px);
+}
+
+body {
+	background-color: #85ff33;
+	background:url('backgrounds-blank-blue-953214.jpg');
+}
